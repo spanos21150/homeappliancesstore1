@@ -30,7 +30,7 @@ public class homeappliancesstore{
             homeappliancesstore.setDief(args[1]);
             try {
                 //employees=Integer.parseInt(args[2])
-                // homeappliancesstore.setUp(Integer.parseInt(args[2]));
+                homeappliancesstore.setUp(Integer.parseInt(args[2]));
                 if(on == null ||dief == null) {
                     System.out.println("Error");
                 }else{
