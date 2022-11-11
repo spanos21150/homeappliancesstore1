@@ -3,7 +3,7 @@ public class homeappliancesstore{
     static String on;
     static String dief;
     static int up;
-    public static String getCompanyname() {
+    public static String getOn() {
         return on;
     }
     public static void setOn(String on) {
@@ -12,8 +12,8 @@ public class homeappliancesstore{
     public static String getDief() {
         return dief;
     }
-    public static void setDief(String address) {
-        homeappliancesstore.dief = address;
+    public static void setDief(String dief) {
+        homeappliancesstore.dief = dief;
     }
     public static int getUp() {
         return up;
@@ -22,7 +22,6 @@ public class homeappliancesstore{
         homeappliancesstore.up = up;
     }
     public static void main(String[]args){
-
         try{
             //companyname=args[0]
             homeappliancesstore.setOn(args[0]);
@@ -34,16 +33,13 @@ public class homeappliancesstore{
                 if(on == null ||dief == null) {
                     System.out.println("Error");
                 }else{
-                    System.out.println("company name: " + on);
-                    System.out.println("address: " + dief);
-                    System.out.println("employees: " +up);
+                    System.out.println("to onoma einai: " + on);
+                    System.out.println("h diefthinsh einai: " + dief);
+                    System.out.println("oi ergazomenoi einai: " +up);
                 }
             }catch(NumberFormatException e){
                 System.out.println("not an int givens");
             }
         }catch(ArrayIndexOutOfBoundsException e){
             System.out.println("error not enough arguments givens");
-        }
-
-    }
-}
+        }}}
